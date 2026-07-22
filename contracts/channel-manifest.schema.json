@@ -25,18 +25,18 @@
     "schemaVersion": { "const": 1 },
     "sequence": { "type": "integer", "minimum": 0 },
     "channel": { "const": "stable" },
-    "version": { "$ref": "#/$defs/semver" },
+    "version": { "$ref": "#/$defs/monarchVersion" },
     "publishedAt": { "type": "string", "format": "date-time" },
     "expiresAt": { "type": "string", "format": "date-time" },
-    "minimumUpdaterVersion": { "$ref": "#/$defs/semver" },
-    "minimumLauncherVersion": { "$ref": "#/$defs/semver" },
+    "minimumUpdaterVersion": { "$ref": "#/$defs/monarchVersion" },
+    "minimumLauncherVersion": { "$ref": "#/$defs/monarchVersion" },
     "available": { "type": "boolean" },
     "withdrawnReason": { "type": ["string", "null"], "maxLength": 512 },
     "revokedVersions": {
       "type": "array",
       "maxItems": 128,
       "uniqueItems": true,
-      "items": { "$ref": "#/$defs/semver" }
+      "items": { "$ref": "#/$defs/monarchVersion" }
     },
     "releaseNotesUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
     "compatibility": {
@@ -86,7 +86,7 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 180,
-              "pattern": "^Monarch-Setup-[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?\\.exe$"
+              "pattern": "^Monarch-Setup-[0-9]+\\.[0-9]+\\.[0-9]+(?:\\.[0-9]+)?\\.exe$"
             }
           }
         }
@@ -118,9 +118,9 @@
     }
   ],
   "$defs": {
-    "semver": {
+    "monarchVersion": {
       "type": "string",
-      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*)?(?:\\+[0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*)?$"
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:\\.(0|[1-9][0-9]*))?$"
     }
   }
 }
