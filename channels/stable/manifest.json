@@ -1,15 +1,16 @@
 {
   "channel": "stable",
-  "version": "0.2.3.5",
+  "version": "0.2.3.6",
   "minimumUpdaterVersion": "0.2.3.2",
   "minimumLauncherVersion": "1.0.0",
   "available": true,
   "withdrawnReason": null,
   "revokedVersions": [
     "0.2.3.2",
-    "0.2.3.3"
+    "0.2.3.3",
+    "0.2.3.5"
   ],
-  "releaseNotesUrl": "https://github.com/MrPastio/monarch-releases/releases/tag/v0.2.3.5",
+  "releaseNotesUrl": "https://github.com/MrPastio/monarch-releases/releases/tag/v0.2.3.6",
   "compatibility": {
     "runtimeVersion": "2026.07.6",
     "backendEnvironment": "backend-0.1.5-offline5",
@@ -20,15 +21,15 @@
     "maximumModelCatalogSchema": 1
   },
   "asset": {
-    "url": "https://github.com/MrPastio/monarch-releases/releases/download/v0.2.3.5/Monarch-Setup-0.2.3.5.exe",
+    "url": "https://github.com/MrPastio/monarch-releases/releases/download/v0.2.3.6/Monarch-Setup-0.2.3.6.exe",
     "mirrors": [],
-    "fileName": "Monarch-Setup-0.2.3.5.exe",
-    "size": 731416567,
-    "sha256": "511317e1e4edc5fff14b85a999f467a68e04d086b434755dc6fc0f7d3973b4d3"
+    "fileName": "Monarch-Setup-0.2.3.6.exe",
+    "size": 731473191,
+    "sha256": "a406043f5f2e04774317e657810b3efcd09f0fa1357076ab32aff88865f74743"
   },
   "keyId": "monarch-release-2026-01",
   "schemaVersion": 1,
-  "sequence": 4,
-  "publishedAt": "2026-07-23T15:08:43Z",
-  "expiresAt": "2026-10-21T15:08:43Z"
+  "sequence": 5,
+  "publishedAt": "2026-07-23T16:26:33Z",
+  "expiresAt": "2026-10-21T16:26:33Z"
 }
