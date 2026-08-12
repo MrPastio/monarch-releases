@@ -1,17 +1,16 @@
 {
   "channel": "stable",
-  "version": "0.2.4.0",
+  "version": "0.2.4.1",
   "minimumUpdaterVersion": "0.2.3.2",
   "minimumLauncherVersion": "1.0.0",
-  "available": false,
-  "withdrawnReason": "Clean Windows installation may finish without a verified launcher. Use the upcoming installer hotfix.",
+  "available": true,
+  "withdrawnReason": null,
   "revokedVersions": [
     "0.2.3.2",
     "0.2.3.3",
-    "0.2.3.5",
-    "0.2.4.0"
+    "0.2.3.5"
   ],
-  "releaseNotesUrl": "https://github.com/MrPastio/monarch-releases/releases/tag/v0.2.4.0",
+  "releaseNotesUrl": "https://github.com/MrPastio/monarch-releases/releases/tag/v0.2.4.1",
   "compatibility": {
     "runtimeVersion": "2026.07.7",
     "backendEnvironment": "backend-0.1.5-offline5",
@@ -21,10 +20,16 @@
     "minimumModelCatalogSchema": 1,
     "maximumModelCatalogSchema": 1
   },
-  "asset": null,
+  "asset": {
+    "url": "https://github.com/MrPastio/monarch-releases/releases/download/v0.2.4.1/Monarch-Setup-0.2.4.1.exe",
+    "mirrors": [],
+    "fileName": "Monarch-Setup-0.2.4.1.exe",
+    "size": 703569487,
+    "sha256": "5b73f2ebf7387a08967bf05741ccb65917fb6cf0451d748917c4130117fb04a9"
+  },
   "keyId": "monarch-release-2026-01",
   "schemaVersion": 1,
-  "sequence": 9,
-  "publishedAt": "2026-08-12T11:18:15Z",
-  "expiresAt": "2026-11-10T11:18:15Z"
+  "sequence": 10,
+  "publishedAt": "2026-08-12T12:31:37Z",
+  "expiresAt": "2026-11-10T12:31:37Z"
 }
